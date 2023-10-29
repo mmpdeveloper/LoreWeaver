@@ -1,0 +1,59 @@
+.custom-button {
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.glass {
+    -fx-fill: rgba(255, 255, 255, 0.2);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.2), 10, 0.5, 0.0, 0.0);
+    -fx-stroke: rgba(255, 255, 255, 0.3);
+}
+
+.glassTwo {
+    -fx-background-color: rgba(255, 255, 255, 0.25);
+    -fx-effect: dropshadow(gaussian, rgba(31, 38, 135, 0.37), 10, 0.5, 0, 8);
+    -fx-border-color: rgba(255, 255, 255, 0.18);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.glass3 {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+}
+
+.glass3 .content {
+    -fx-background-color: transparent;
+}
+
+.glass3 .scroll-bar {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.glass3 .viewport {
+    -fx-background-color: transparent;
+}
+
+.cool-submit-button {
+    .cool-submit-button {
+        -fx-background-color: #3498db;
+        -fx-text-fill: white;
+        -fx-font-size: 14px;
+        -fx-border-radius: 5px;
+        -fx-background-radius: 5px;
+        -fx-padding: 10px 20px;
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 0, 0.5, 0, 2);
+        -fx-cursor: hand;
+    }
+
+    .cool-submit-button:hover {
+        -fx-background-color: #2980b9;
+    }
+
+    .cool-submit-button:pressed {
+        -fx-background-color: #2471a3;
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 0, 1, 0, 4);
+    }
+
+}
