@@ -24,7 +24,6 @@ public class HelloController {
     public void initialize() {
         btn.setOnAction(e -> {
             String prompt = userInput.getText();
-            // Show the loading indicator
             loadingIndicator.setVisible(true);
 
             Task<String> task = new Task<>() {
@@ -37,28 +36,20 @@ public class HelloController {
             task.setOnSucceeded(event -> {
                 String result = task.getValue();
                 outputArea.setText(result);
-                // Hide the loading indicator
                 loadingIndicator.setVisible(false);
             });
 
-            // You might want to handle potential exceptions too.
             task.setOnFailed(event -> {
-                // Handle the error, for example:
                 outputArea.setText("An error occurred.");
-                // Hide the loading indicator
                 loadingIndicator.setVisible(false);
             });
 
-            // Start the task in a separate thread
             new Thread(task).start();
         });
     }
 
     @FXML
     private void handlePythonCall() {
-        // This method is bound to the button's onAction in the FXML,
-        // so it'll be called when the button is pressed.
-        // However, since we've set the action in initialize(), this is redundant,
-        // but kept for clarity.
+        
     }
 }
